@@ -1,7 +1,7 @@
 /* Definição de todas as cores da página */
 :root {
-    --cor-primaria: rgb(0, 0, 0) ;
-    --cor-secundaria: #ff0000;
+    --cor-primaria: #1a1a1a ;
+    --cor-secundaria: red;
     --cor-terciaria: yellow;
     --cor-quartenaria: #000000;
     --cor-fundo: #f1f1d6;
@@ -14,14 +14,11 @@ html {
 }
 
 body {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-bottom: 20px; /* diferente de "button" */
-    margin-right: 50px; 
-    margin: 20px 50px 20px 50px; /* para fazer todos as margens na mesma linha, sentido hórario */
-    text-align: justify;
-    background-color:var(--cor-fundo);
-    border-radius: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin: 96px 0;
     /* background-image: url(./Matheus+Evelyn-fundo.jpeg) */
 }
 
@@ -52,7 +49,7 @@ body {
 }
 
 .subtitulo-de-artigo {
-    color: var(--cor-quartenaria);
+    color: var(--cor-secundaria);
     line-height: 1.5;
     font-weight: bold;
     font-size: 14pt;
@@ -67,20 +64,27 @@ p {
 }
 
 .paragrafo-de-artigo {
-    background-color:var(--cor-fundo);
+    background-color:var(--cor-primaria);
     padding: 10px 20px 0px 20px;
 }
 
 /* Para remover espaçamento de linhas de um paragrafo para outro */
 p + .paragrafo-de-artigo {
     padding-top: 1;
+    color: var(--cor-secundaria);
 }
 
 article {
-    border: 8px double var(--cor-quartenaria);
+    border: 8px double var(--cor-secundaria);
     padding: 30px;
     margin: 30px 0;
     border-radius: 50px;
+}
+
+details {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    
 }
 
 
@@ -89,32 +93,36 @@ article {
 } */
 
 .menu-principal li {
-    color: var(--cor-fundo);
+    color: var(--cor-secundaria);
     display: flex; 
     line-height: 100px;
     transition: background, .35s ease-in-out, font .2;
 }
 
 .menu-principal a {
-    color: var(--cor-fundo);
-    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: 120%;
     padding: 0 20px;
 }
 
 .menu-principal a:hover {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     border-radius: 120px;
 
 
 }
 
 .menu-principal ul{
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     padding: 0;
     border-radius: 120px;
     /* text-align: center; */
     display: flex;
     justify-content: space-around;
 
+}
+
+p + .paragrafo-de-artigo {
+    padding-top: 0;
 }
