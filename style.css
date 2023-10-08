@@ -59,7 +59,7 @@ body {
 }
 
 p {
-    color:var(--cor-primaria);
+    color:var(--cor-secundaria);
     line-height: 1.2;
 }
 
